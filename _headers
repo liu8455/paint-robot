@@ -1,0 +1,10 @@
+﻿/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+/docs/*
+  Content-Type: application/pdf
+  Cache-Control: public, max-age=86400
+
+/*
+  X-Content-Type-Options: nosniff
