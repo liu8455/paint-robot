@@ -6,10 +6,81 @@
     <meta name="theme-color" content="#07090b" />
     <title>MPX3500 · PPH707 喷涂机器人拆解视图</title>
     <meta name="description" content="安川 MOTOMAN MPX3500 六轴喷涂机器人 + SAMES PPH707 旋杯雾化器 3D 拆解展示" />
-    <script type="module" crossorigin src="./assets/index-CoGpvTSU.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-D3EJ_aIe.css">
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #07090b;
+        color: #e6edf3;
+        font-family: system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      }
+      #boot {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        background: radial-gradient(circle at 50% 45%, #0d1418 0%, #07090b 70%);
+        z-index: 9999;
+      }
+      #boot .ring {
+        width: 42px;
+        height: 42px;
+        border: 2px solid rgba(55, 224, 200, 0.18);
+        border-top-color: #37e0c8;
+        border-radius: 50%;
+        animation: spin 0.9s linear infinite;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      #boot .t {
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        color: #9fb3ad;
+      }
+      #boot .s {
+        font-size: 11px;
+        color: #55626c;
+        letter-spacing: 0.06em;
+      }
+      #boot .bar {
+        width: 180px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.08);
+        overflow: hidden;
+        border-radius: 2px;
+      }
+      #boot .bar i {
+        display: block;
+        width: 40%;
+        height: 100%;
+        background: #37e0c8;
+        animation: slide 1.4s ease-in-out infinite;
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(350%);
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-CKGYqm55.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C1b5MmCh.css">
   </head>
   <body>
+    <div id="boot">
+      <div class="ring"></div>
+      <div class="t">MPX3500 · 拆解视图</div>
+      <div class="bar"><i></i></div>
+      <div class="s">正在加载 3D 场景（首次打开约需 15–25 秒）</div>
+    </div>
     <div id="root"></div>
   </body>
 </html>
